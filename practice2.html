@@ -1,0 +1,14 @@
+<div id = "d1"></div>
+
+<script>
+  document.getElementById("d1").innerHTML = new Date().toLocaleString();
+</script>
+
+<div id = "d2"></div>
+
+<script>
+  // 時刻を0.1秒おきに変化させる（setInterval）
+  setInterval(function() {
+    document.getElementById("d2").innerHTML = new Date().toLocaleString();
+  }, 100);
+</script>
